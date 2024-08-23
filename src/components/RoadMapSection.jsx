@@ -22,7 +22,7 @@ const roadmap = [
 const RoadMapSection = () => {
   return (
     <section id="working" className="max-w-80 mx-auto pt-[60px]">
-      <h1 className="font-roboto font-semibold text-3xl text-center mb-16 mt-10 sm:text-5xl">How It Works</h1>
+      <h1 className="font-roboto font-semibold text-3xl text-center mb-16 mt-10 sm:text-5xl">Workflow</h1>
       {
         roadmap.map((roadmapItem, index) => (
           <MileStone 

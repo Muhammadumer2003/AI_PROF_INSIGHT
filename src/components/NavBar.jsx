@@ -36,14 +36,10 @@ const NavBar =  () => {
               <a href="#features" className="text-gray-600">Features</a>
             </li>
             <li>
-              <a href="#working" className="text-gray-600">Working</a>
+              <a href="#working" className="text-gray-600">Workflow</a>
             </li>
           </ul>
         </nav>
-        <div className="hidden md:block">
-          <a href="/" className="font-roboto bg-black px-4 py-2 rounded-md text-white cursor-pointer">Log In</a>
-          <a href="/" className="font-roboto bg-black px-4 py-2 rounded-md text-white cursor-pointer ml-2">Sign Up</a>
-        </div>
         <MobileMenu />
       </div>
       </div>
