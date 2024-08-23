@@ -11,7 +11,7 @@ const navItems = [
     url: "#features",
   },
   {
-    title: "Working",
+    title: "WorkFlow",
     url: "#working",
   },
   {
