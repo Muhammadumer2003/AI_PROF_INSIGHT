@@ -11,16 +11,8 @@ const navItems = [
     url: "#features",
   },
   {
-    title: "Working",
+    title: "Workflow",
     url: "#working",
-  },
-  {
-    title: "Log In",
-    url: "/sign-in",
-  },
-  {
-    title: "Sign Up",
-    url: "/sign-up",
   },
 ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image';
 import demo from '../assets/images/dashboarddemo.png';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -12,12 +13,19 @@ const HeroSection = () => {
           Your Professor Guide
         </span>
       </h1>
-      <h2 className="mt-5 text-gray-600 sm:text-xl">AI-Powered Assistant leveraging RAG for accurate professor and course insights</h2>
+      <h2 className="mt-5 text-gray-600 sm:text-xl">
+        AI-Powered Assistant leveraging RAG for accurate professor and course insights
+      </h2>
       <div className="mx-auto mt-5 flex max-w-fit space-x-4">
-        <a href="#getstarted" className="rounded-full border px-5 py-2 text-sm font-roboto font-medium shadow-sm border-black bg-black text-white hover:ring-gray-400 hover:ring-2">
-          Get Started
-        </a>
-        <a href="#features" className="rounded-full border px-5 py-2 text-sm font-roboto font-medium shadow-sm border-gray-200 bg-white text-black hover:ring-gray-300 hover:ring-2">
+        <Link href="/Chat" passHref>
+          <button className="rounded-full border px-5 py-2 text-sm font-roboto font-medium shadow-sm border-black bg-black text-white hover:ring-gray-400 hover:ring-2">
+            Get Started
+          </button>
+        </Link>
+        <a 
+          href="#features" 
+          className="rounded-full border px-5 py-2 text-sm font-roboto font-medium shadow-sm border-gray-200 bg-white text-black hover:ring-gray-300 hover:ring-2"
+        >
           Learn More
         </a>
       </div>
