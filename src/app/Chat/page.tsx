@@ -5,8 +5,6 @@ import { AppBar, Toolbar, Typography, Container, TextField, Button, Box, Paper }
 import { styled } from '@mui/material/styles';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import ReactMarkdown from 'react-markdown';
-import { text } from 'stream/consumers';
-
 
 const themeColors = {
   primary: '#4c51bf', 
@@ -65,26 +63,57 @@ const Chat = () => {
   const [hasMore, setHasMore] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  const sendMessage = () => {
+  const sendMessage = async () => {
     if (!message.trim()) return;
 
-    setMessage('');
+    // Add user's message to the chat
     setMessages((prevMessages) => [
       ...prevMessages,
       { role: 'user', content: message },
-      { role: 'assistant', content: '' },
+      { role: 'assistant', content: '' },  // Placeholder for loading state
     ]);
 
-    setTimeout(() => {
-      setMessages((prevMessages) => {
-        const lastMessage = prevMessages[prevMessages.length - 1];
-        const otherMessages = prevMessages.slice(0, -1);
-        return [
-          ...otherMessages,
-          { ...lastMessage, content: 'This is a simulated response.' },
-        ];
+    setMessage('');
+
+    try {
+      // Send message to the backend
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify([...messages, { role: 'user', content: message }])
       });
-    }, 1000);
+
+      if (!response.ok) throw new Error('Failed to fetch response from backend.');
+
+      // Create a stream reader for the response
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder('utf-8');
+
+      let assistantMessage = '';
+
+      while (reader) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        assistantMessage += decoder.decode(value, { stream: true });
+
+        // Update assistant's message with new data
+        setMessages((prevMessages) => {
+          const lastMessage = prevMessages[prevMessages.length - 1];
+          const otherMessages = prevMessages.slice(0, -1);
+          return [
+            ...otherMessages,
+            { ...lastMessage, content: assistantMessage },
+          ];
+        });
+      }
+
+    } catch (error) {
+      console.error('Error fetching response:', error);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { role: 'assistant', content: 'Sorry, something went wrong.' },
+      ]);
+    }
   };
 
   const fetchMoreMessages = () => {

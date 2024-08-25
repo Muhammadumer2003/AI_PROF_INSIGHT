@@ -1,0 +1,296 @@
+{
+    "reviews": [
+      [
+  {
+    "professor": "Dr. Imran Khan",
+    "review": "Clear lectures and easier to understand. If you focus well in class, you can easily score 4 GPA, but grading is strict.",
+    "subject": "DEVOPS",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Sana Ali",
+    "review": "Explains concepts thoroughly with real-world examples, but assignments are tough and require a lot of effort.",
+    "subject": "DEVOPS",
+    "stars": 3
+  },
+  {
+    "professor": "Mr. Asif Malik",
+    "review": "Great teaching style with interactive sessions. However, his quizzes can be tricky.",
+    "subject": "DEVOPS",
+    "stars": 4
+  },
+  {
+    "professor": "Dr. Rabia Qureshi",
+    "review": "Focuses on practical knowledge and hands-on labs. Very helpful during office hours.",
+    "subject": "DEVOPS",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Usman Tariq",
+    "review": "Engaging lectures but sometimes goes too fast. Make sure to ask questions if you don't understand.",
+    "subject": "DEVOPS",
+    "stars": 3
+  },
+  {
+    "professor": "Ms. Zainab Farooq",
+    "review": "Provides a lot of resources for learning but expects a high level of self-study.",
+    "subject": "DEVOPS",
+    "stars": 4
+  },
+  {
+    "professor": "Dr. Adeel Ahmed",
+    "review": "His teaching method is unique, focusing on case studies. Assignments are challenging but rewarding.",
+    "subject": "MACHINE LEARNING",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Nida Shah",
+    "review": "Lectures are well-structured, and she is very approachable for any doubts. However, grading is tough.",
+    "subject": "MACHINE LEARNING",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Ali Hassan",
+    "review": "A bit disorganized in his lectures, but the content is very informative.",
+    "subject": "MACHINE LEARNING",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Sarah Khan",
+    "review": "Clear explanations with a lot of examples. Her exams are straightforward if you attend lectures.",
+    "subject": "MACHINE LEARNING",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Fahad Raza",
+    "review": "Good balance between theory and practical application. However, the course pace is very fast.",
+    "subject": "MACHINE LEARNING",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Samina Abbas",
+    "review": "Very helpful and understanding. She encourages students to ask questions and engage in class discussions.",
+    "subject": "MACHINE LEARNING",
+    "stars": 5
+  },
+  {
+    "professor": "Dr. Hassan Iqbal",
+    "review": "Excellent professor with deep knowledge in the field. Assignments can be tough but are fair.",
+    "subject": "DATABASE SYSTEMS",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Hina Malik",
+    "review": "Lectures are interactive, and she uses a lot of practical examples. However, exams are difficult.",
+    "subject": "DATABASE SYSTEMS",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Kamran Javed",
+    "review": "Focuses on understanding rather than rote learning. His quizzes are challenging.",
+    "subject": "DATABASE SYSTEMS",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Maryam Ali",
+    "review": "Very structured lectures with clear objectives. Provides great support outside class.",
+    "subject": "DATABASE SYSTEMS",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Tariq Siddiqui",
+    "review": "Detailed lectures, but sometimes too focused on theory rather than practical application.",
+    "subject": "DATABASE SYSTEMS",
+    "stars": 3
+  },
+  {
+    "professor": "Ms. Anam Khalid",
+    "review": "Approachable and explains difficult concepts in simple terms. Good grading system.",
+    "subject": "DATABASE SYSTEMS",
+    "stars": 4
+  },
+  {
+    "professor": "Dr. Ahmed Sheikh",
+    "review": "Highly knowledgeable with a focus on practical skills. His labs are very beneficial.",
+    "subject": "ALGORITHMS",
+    "stars": 5
+  },
+  {
+    "professor": "Ms. Ayesha Rashid",
+    "review": "Clear and concise lectures. Assignments are tough but help in understanding the subject better.",
+    "subject": "ALGORITHMS",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Bilal Haider",
+    "review": "Sometimes difficult to follow due to his fast pace, but very informative.",
+    "subject": "ALGORITHMS",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Zara Naeem",
+    "review": "Makes the course very interesting with her teaching style. Exams are fair and based on lectures.",
+    "subject": "ALGORITHMS",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Hamza Shahid",
+    "review": "Very good at explaining complex topics. Provides additional support material.",
+    "subject": "ALGORITHMS",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Mahnoor Aslam",
+    "review": "Engaging lectures and helpful office hours, but the course content is dense.",
+    "subject": "ALGORITHMS",
+    "stars": 4
+  },
+  {
+    "professor": "Dr. Junaid Mahmood",
+    "review": "Very detailed in his explanations. His tests can be tricky, so pay attention to details.",
+    "subject": "OPERATING SYSTEMS",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Saira Afzal",
+    "review": "Friendly and makes the course enjoyable. Focuses a lot on projects which are very insightful.",
+    "subject": "OPERATING SYSTEMS",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Noman Faraz",
+    "review": "Lectures can be dry, but he is very knowledgeable. Make sure to read the textbook.",
+    "subject": "OPERATING SYSTEMS",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Farah Shaikh",
+    "review": "Uses a lot of practical examples which help in understanding the concepts better.",
+    "subject": "OPERATING SYSTEMS",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Shahbaz Khan",
+    "review": "Engaging lecturer with a good sense of humor. Assignments are tough but doable.",
+    "subject": "OPERATING SYSTEMS",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Amina Iqbal",
+    "review": "Very structured and organized in her lectures. Projects are very helpful for understanding the material.",
+    "subject": "OPERATING SYSTEMS",
+    "stars": 5
+  },
+  {
+    "professor": "Dr. Khalid Mehmood",
+    "review": "Great at explaining theory but lacks focus on practical application. Assignments are theoretical.",
+    "subject": "COMPUTER NETWORKS",
+    "stars": 3
+  },
+  {
+    "professor": "Ms. Shazia Munir",
+    "review": "Very engaging and makes the subject interesting. Assignments are practical and challenging.",
+    "subject": "COMPUTER NETWORKS",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Zubair Akhtar",
+    "review": "Knows the subject well, but his lectures are not very organized. Requires a lot of self-study.",
+    "subject": "COMPUTER NETWORKS",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Lubna Bashir",
+    "review": "Focuses a lot on practical knowledge. Labs are very informative and helpful for understanding.",
+    "subject": "COMPUTER NETWORKS",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Waqar Hussain",
+    "review": "Great at connecting theory with real-world examples. His exams are straightforward if you follow lectures.",
+    "subject": "COMPUTER NETWORKS",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Uzma Karamat",
+    "review": "Provides detailed lectures and is very helpful during office hours. Her grading is fair.",
+    "subject": "COMPUTER NETWORKS",
+    "stars": 4
+  },
+  {
+    "professor": "Dr. Moiz Ahmed",
+    "review": "Clear and concise in his teaching. Encourages a lot of student interaction and questions.",
+    "subject": "SOFTWARE ENGINEERING",
+    "stars": 5
+  },
+  {
+    "professor": "Ms. Hira Khan",
+    "review": "Explains concepts very clearly but moves at a fast pace. Assignments are challenging.",
+    "subject": "SOFTWARE ENGINEERING",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Adnan Rafiq",
+    "review": "Sometimes hard to follow in lectures, but the content is very relevant and useful.",
+    "subject": "SOFTWARE ENGINEERING",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Mehwish Javed",
+    "review": "Makes sure everyone understands the topic before moving on. Provides ample resources.",
+    "subject": "SOFTWARE ENGINEERING",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Adeel Rehman",
+    "review": "Very interactive and helpful during office hours. His projects are very insightful.",
+    "subject": "SOFTWARE ENGINEERING",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Zara Nadeem",
+    "review": "Very organized in her teaching. Provides a lot of real-world examples and case studies.",
+    "subject": "SOFTWARE ENGINEERING",
+    "stars": 5
+  },
+  {
+    "professor": "Dr. Kamran Anwar",
+    "review": "Excellent lecturer who makes sure everyone is on the same page. Projects are very practical.",
+    "subject": "ARTIFICIAL INTELLIGENCE",
+    "stars": 5
+  },
+  {
+    "professor": "Ms. Maria Riaz",
+    "review": "Lectures are clear and well-structured, but her exams are difficult and require deep understanding.",
+    "subject": "ARTIFICIAL INTELLIGENCE",
+    "stars": 4
+  },
+  {
+    "professor": "Mr. Omar Farooq",
+    "review": "Focuses heavily on theory. Make sure to review lecture notes regularly.",
+    "subject": "ARTIFICIAL INTELLIGENCE",
+    "stars": 3
+  },
+  {
+    "professor": "Dr. Saima Aslam",
+    "review": "Uses a lot of practical examples which makes learning easy. Provides good support material.",
+    "subject": "ARTIFICIAL INTELLIGENCE",
+    "stars": 5
+  },
+  {
+    "professor": "Mr. Yasir Khan",
+    "review": "Very engaging lecturer. His assignments are challenging but help solidify understanding.",
+    "subject": "ARTIFICIAL INTELLIGENCE",
+    "stars": 4
+  },
+  {
+    "professor": "Ms. Fatima Ali",
+    "review": "Clear and structured lectures with a focus on practical applications. Grading is fair.",
+    "subject": "ARTIFICIAL INTELLIGENCE",
+    "stars": 4
+  }
+]
+
+    ]
+  }
+  
