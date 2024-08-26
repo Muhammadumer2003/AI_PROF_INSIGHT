@@ -140,6 +140,7 @@ import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
 import { HfInference } from '@huggingface/inference';
 import OpenAI from "openai";
+import Groq from 'groq-sdk';
 
 const systemPrompt =  `
 You are an AI assistant designed to help students find professors based on their queries using a RAG system. Your primary goal is to:
@@ -216,18 +217,20 @@ export async function POST(req) {
         const lastMessageContent = lastMessage.content + resultString;
         const lastDataWithoutLastMessage = data.slice(0, data.length - 1);
 
-        const openai = new OpenAI({
-            apiKey: process.env.OPENROUTER_API_KEY,
-            baseURL: "https://openrouter.ai/api/v1",
-        });
+        // const openai = new OpenAI({
+        //     apiKey: process.env.OPENROUTER_API_KEY,
+        //     baseURL: "https://openrouter.ai/api/v1",
+        // });
 
-        const completion = await openai.chat.completions.create({
+        const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+
+        const completion = await groq.chat.completions.create({
             messages: [
                 { role: 'system', content: systemPrompt },
                 ...lastDataWithoutLastMessage,
                 { role: 'user', content: lastMessageContent }
             ],
-            model: 'openai/gpt-3.5-turbo',
+            model: 'llama3-8b-8192',
             stream: true
         });
 
